@@ -5,6 +5,7 @@ const messageContainer = document.querySelector('.message-container');
 const message = document.getElementById('message');
 
 function processFormData(e) {
+    e.preventDefault();
     console.log(e);
 }
 
