@@ -9,7 +9,10 @@ let isValid = false;
 function validateForm() {
     // Use HTML constraint API to check form validity
     isValid = form.checkValidity();
-    console.log(isValid);
+    // Style main message for an error
+    message.textContent = 'Please fill out all fields.';
+    message.style.color = 'red';
+    messageContainer.style.borderColor = 'red';
 }
 
 function processFormData(e) {
