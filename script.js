@@ -59,6 +59,10 @@ function processFormData(e) {
     e.preventDefault();
     // Validate Form
     validateForm();
+    // Submit Form if Valid
+    if (isValid && passwordsMatch) {
+        storeFormData();
+    }
 }
 
 
