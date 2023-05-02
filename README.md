@@ -1,4 +1,4 @@
-﻿in this project, I learned how to create a formvalidation on the web. And also this project uses many reference tools and guides. Links :
+﻿in this project, I learned how to create a form validation on the web. And also this project uses many reference tools and guides. Links :
 
 1.HTML Form: https://www.w3schools.com/html/html_forms.asp
 
