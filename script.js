@@ -8,10 +8,10 @@ let isValid = false;
 let passwordsMatch = false;
 
 function validateForm() {
-    // Use HTML constraint API to check form validity
-    isValid = form.checkValidity();
-    // If the form isn't valid
-    if (!isValid) {
+  // Use HTML constraint API to check form validity
+  isValid = form.checkValidity();
+  // If the form isn't valid
+  if (!isValid) {
     // Style main message for an error
     message.textContent = 'Please fill out all fields.';
     message.style.color = 'red';
@@ -35,7 +35,7 @@ function validateForm() {
     return;
   }
   // If form is valid and passwords match
-    if (isValid && passwordsMatch) {
+  if (isValid && passwordsMatch) {
     // Style main message for success
     message.textContent = 'Successfully Registered!';
     message.style.color = 'green';
@@ -56,15 +56,14 @@ function storeFormData() {
 }
 
 function processFormData(e) {
-    e.preventDefault();
-    // Validate Form
-    validateForm();
-    // Submit Form if Valid
-    if (isValid && passwordsMatch) {
-        storeFormData();
-    }
+  e.preventDefault();
+  // Validate Form
+  validateForm();
+  // Submit Form if Valid
+  if (isValid && passwordsMatch) {
+    storeFormData();
+  }
 }
-
 
 // Event Listener
 form.addEventListener('submit', processFormData);
